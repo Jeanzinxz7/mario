@@ -1,13 +1,13 @@
 :root {
-    --cor-de-fundo-botao: gold;
-    --cor-fonte: red;
-    --cor-borda: black;
+    --cor-de-fundo-botao: rgb(255, 255, 255);
+    --cor-fonte: rgb(255, 255, 255);
+    --cor-borda: rgb(255, 255, 255);
 
 }
 
 .titulo1 {
     font-family: tac one;
-    color: var(--cor-fonte);
+    color: var(--cor-de-fundo);
     font-size: 10em;
     text-align: center;
     padding: 50px 50px;
@@ -30,7 +30,7 @@
 .lista-personagens {
     list-style: none;
     font-family: tac one;
-    color: red;
+    color: rgb(0, 0, 0);
     font-size: 50px;
     display: flex;
     justify-content: space-around;
@@ -58,9 +58,9 @@
 
 .botao {
     text-decoration: none;
-    color: red;
+    color: rgb(0, 0, 0);
 }
 
 .botao:hover {
-    color: yellow;
+    color: rgb(87, 87, 87);
 }
