@@ -1,66 +1,42 @@
 :root {
-    --cor-de-fundo-botao: rgb(255, 255, 255);
-    --cor-fonte: rgb(255, 255, 255);
-    --cor-borda: rgb(255, 255, 255);
 
 }
-
-.titulo1 {
-    font-family: tac one;
-    color: var(--cor-de-fundo);
-    font-size: 10em;
-    text-align: center;
-    padding: 50px 50px;
-}
-
-.principal {
-    background-image: url(fundo.png);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    height: 100vh;
-}
-
-
-.lista-personagens {
-    list-style: none;
-    font-family: tac one;
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.mario img {
-    width: 2.2em;
-}
-
-.mario {
-    text-align: center;
-}
-
-.yoshi img {
-    width: 2em;
-}
-
-.bowser img {
-    width: 3em;
-}
-
-.peach img {
-    width: 2em;
-}
-
-.botao {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.botao:hover {
-    color: rgb(87, 87, 87);
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: hsl(0, 0%, 100%);
+            color: #383838;
+        }
+        
+        header {
+            background-color: #242424;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #2b2a2a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .principal {
+            background-image: url(j.png);
+        }
+    </style>
