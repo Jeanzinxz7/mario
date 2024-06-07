@@ -3,61 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK-47: A Arma Que Mudou o Mundo</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
-        .cta-button {
-            background-color: #e50914;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            text-transform: uppercase;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-            margin-bottom: 20px;
-        }
-        .cta-button:hover {
-            background-color: #ff0000;
-        }
-        .movie-poster {
-            margin-top: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-        }
-    </style>
+    <title>NaKe - Tênis e Roupas Esportivas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>AK-47: A Arma Que Mudou o Mundo</h1>
-        <p>Descubra a fascinante história por trás da AK-47, uma das armas mais icônicas e influentes já criadas. Desde sua origem na União Soviética até seu papel em conflitos ao redor do mundo, este documentário explora o impacto duradouro desta arma.</p>
-        <a href="INSIRA O LINK DO TRAILER AQUI" target="_blank" class="cta-button">Assistir ao Trailer</a>
-        <img src="https://m.media-amazon.com/images/I/91Y3r2k6nuL._AC_SY679_.jpg" alt="AK-47: A Arma Que Mudou o Mundo" class="movie-poster">
-    </div>
-</body>
-</html>
+    <header>
+        <h1>NaKe</h1>
+        <nav>
+            <ul>
+                <li><a href="#tenis">Tênis</a></li>
+                <li><a href="#roupas">Roupas</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="tenis">
+        <h2>Tênis Jordan</h2>
+        <div class="product">
+            <img src="tenis1.jpg" alt="Tênis Jordan 1">
+            <p>Tênis Jordan 1</p>
+            <p>R$ 399,99</p>
+        </div>
+        <!-- Adicione mais modelos de tênis aqui -->
+    </section>
+
+    <section id="roupas">
+        <h2>Roupas Esportivas</h2>
+        <div class="product">
+            <img src="roupa1.jpg" alt="Camiseta Nike">
+            <p>Camiseta Nike</p>
+            <p>R$ 79,99</p>
+        </div>
+        <!-- Adicione mais modelos de roupas aqui -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NaKe - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para mudar de aba quando clicar em um link no menu de navegação
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
 </html>
